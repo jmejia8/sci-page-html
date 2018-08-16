@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;/*#82BBD1;*/
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 12pt;
+}
+
+body{
+    color: #343434;
+    font-family: sans-serif;
+    background-color: #F8F8F8;
+}
+
+div.clear{
+    clear: both;
+}
+p, div{
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Lora', sans-serif;
+    color: #343434;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+
+h1{
+    font-size:22pt; 
+    font-weight: bold;
+}
+
+h2{
+    font-size: 18pt;    
+
+}
+
+h3{
+    font-size: 14pt;    
+}
+
+h4{
+    font-size: 14pt;    
+    font-weight: normal;
+}
+
+/*container*/
+
+div.content, .menu-container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+div.content{
+    background: white;
+    margin-top: 316px;
+    border:1px solid #DCDCDC;
+    border-radius: 5px;
+    min-height: 1000px;
+
+    margin-bottom: 50px;
+    border-radius: 5px;
+
+    /*=========*/
+    -webkit-box-shadow: 13px 13px 12px -12px rgba(0,0,0,0.41);
+    -moz-box-shadow: 13px 13px 12px -12px rgba(0,0,0,0.41);
+    box-shadow: 13px 13px 12px -12px rgba(0,0,0,0.41);
+}
+
+/*band*/
+div.band{
+    background: #D0D0D0;
+    right: 0;
+    width: 100%;
+    height: 400px;
+    display: table;
+    z-index: -100;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+
+div.band .wrap{
+    /*width: 100%;*/
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+div.band .wrap h1{
+    /*color: white;*/
+}
+
+/*header*/
+header.main{
+    background: #F4F4F4;
+    -webkit-box-shadow: -2px 9px 12px -12px rgba(0,0,0,0.41);
+    -moz-box-shadow: -2px 9px 12px -12px rgba(0,0,0,0.41);
+    box-shadow: -2px 9px 12px -12px rgba(0,0,0,0.41);
+    position: fixed;
+    top: 0;
+    right:  0;
+    left:  0;
+    z-index: 1000;
+}
+
+/*menu*/
+
+nav.menu li{
+    display: inline-block;
+}
+
+
+nav.menu a{
+    display: block;
+    font-family: 'Libre Baskerville', sans-serif;
+    padding: 20px 15px;
+    color: #000000;
+}
+
+nav.menu a:hover,
+nav.menu a.active,
+nav.menu .current-menu-item a
+{
+    border-bottom: 4px #0A8CCD solid;
+
+}
+
+a.news-item:hover{
+    background: #E1E1E1;
+}
+
+.logo img{
+    width: 50px;
+    height: auto;
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+nav.menu{
+    float: right;
+}
+
+
+/*footer*/
+
+footer{
+    background: #D0D0D0;
+    height: 100px;
+    padding-top: 40px;
+    text-align: center;
+    color: #252525;
+}
+
+/*banner*/
+.banner{
+    position: relative;
+}
+.content-banner{
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    display: table;
+    border-radius: 5px 5px 0 0;
+}
+
+.content-banner .text{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.content-banner .text h2{
+    color: white;
+}
+
+.content-banner .text p{
+    color: #DEDEDE;
+}
+
+.content-banner .text div{
+    padding: 20px;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    width: 50%;
+    margin: auto;
+
+}
+
+/*buttons*/
+
+.btn-default, .btn-green, #searchsubmit{
+    background: #072884;
+    color: #FFFFFF !important;
+    padding: 10px;
+    /*text-transform: uppercase;*/
+    font-weight: bold;
+    display: inline-block;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.btn-default:hover, #searchsubmit:hover{
+    background: #092A4C;
+    color: #FFFFFF;
+}
+
+.btn-green{
+    background: #0E8407;
+}
+
+.btn-green:hover{
+    background: #469D44;
+}
+
+
+/*cards*/
+.cards{
+    text-align: center;
+}
+.card h3{
+    text-align: center;
+}
+.card p{
+    padding: 10px;
+    font-size: 10pt;
+    color: #5A5A5A;
+    height: 90px;
+    overflow: hidden;
+}
+.card{
+    width: 20%;
+    display: inline-block;
+    margin-left:  23px;
+    margin-right: 23px;
+    border: 1px solid #DADADA;
+    border-radius: 5px;
+    text-align: center;
+    -webkit-box-shadow: 8px 15px 38px -17px rgba(0,0,0,0.4);
+    -moz-box-shadow: 8px 15px 38px -17px rgba(0,0,0,0.4);
+    box-shadow: 8px 15px 38px -17px rgba(0,0,0,0.4);
+}
+
+.card .img{
+    height: 100px;
+    width: 100%;
+    background: gray;
+}
