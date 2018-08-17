@@ -49,6 +49,14 @@ h4{
     font-weight: normal;
 }
 
+div.right{
+    text-align: right;
+}
+
+div.center{
+    text-align: center;
+}
+
 /*container*/
 
 div.content, .menu-container{
@@ -193,19 +201,18 @@ footer{
 
 /*buttons*/
 
-.btn-default, .btn-green, #searchsubmit{
-    background: #072884;
+.btn-default, .btn-green, .btn-light, #searchsubmit{
+    background: #002B54;
     color: #FFFFFF !important;
-    padding: 10px;
-    /*text-transform: uppercase;*/
-    font-weight: bold;
+    padding: 5px 15px;
     display: inline-block;
     margin: 15px 0;
-    border-radius: 5px;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .btn-default:hover, #searchsubmit:hover{
-    background: #092A4C;
+    background: #10447A;
     color: #FFFFFF;
 }
 
@@ -215,6 +222,11 @@ footer{
 
 .btn-green:hover{
     background: #469D44;
+}
+
+.btn-light{
+    background: #6389AA;
+
 }
 
 
@@ -232,21 +244,94 @@ footer{
     height: 90px;
     overflow: hidden;
 }
-.card{
-    width: 20%;
+
+.card, .card-post, .card-profile{
     display: inline-block;
-    margin-left:  23px;
-    margin-right: 23px;
     border: 1px solid #DADADA;
     border-radius: 5px;
-    text-align: center;
+    overflow: hidden;
     -webkit-box-shadow: 8px 15px 38px -17px rgba(0,0,0,0.4);
     -moz-box-shadow: 8px 15px 38px -17px rgba(0,0,0,0.4);
     box-shadow: 8px 15px 38px -17px rgba(0,0,0,0.4);
+}
+
+.card{
+    width: 20%;
+    margin-left:  23px;
+    margin-right: 23px;
+    text-align: center;
 }
 
 .card .img{
     height: 100px;
     width: 100%;
     background: gray;
+    /*border-radius: 5px 5px 0 0;*/
+}
+
+.card-post{
+    width: 45%;
+    /*height: 300px;*/
+    vertical-align: bottom;
+    margin-left: 37px; 
+    margin-bottom: 40px;
+}
+.card-post .img{
+    width: auto;
+    height: 100px;
+    background: gray;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card-post .abstract{
+    width: 50%;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+
+.card-post .abstract p{
+    display: block;
+    height: 140px;
+    font-size: 10pt;
+    overflow: hidden;
+}
+
+
+.section-community{
+    text-align: center;
+
+}
+.card-profile{
+    display: inline-block;
+    width: 20%;
+    margin: auto;
+    padding: 10px;
+}
+
+.card-profile .img{
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 100%;
+    padding: 5px;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.card-profile p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    text-align: justify;
+}
+
+/*sections*/
+.main-h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
