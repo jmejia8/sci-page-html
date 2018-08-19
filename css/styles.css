@@ -1,7 +1,6 @@
 *{
     margin: 0;
-    padding: 0;
-    list-style: none;
+    /*padding: 0;*/
     text-decoration: none;
     color: black;/*#82BBD1;*/
     box-sizing: border-box;
@@ -49,6 +48,14 @@ h4{
     font-weight: normal;
 }
 
+a{
+    color: #1D6B9B;
+}
+
+a:hover{
+    border-bottom: 1px dotted #00409E;
+}
+
 div.right{
     text-align: right;
 }
@@ -68,16 +75,20 @@ div.content{
     background: white;
     margin-top: 316px;
     border:1px solid #DCDCDC;
-    border-radius: 5px;
-    min-height: 1000px;
-
     margin-bottom: 50px;
     border-radius: 5px;
+    padding-bottom: 20px;
 
+}
+
+.section-post, div.content, aside.tools .widget{
+    background: white;
+    border-radius: 5px;
     /*=========*/
     -webkit-box-shadow: 13px 13px 12px -12px rgba(0,0,0,0.41);
     -moz-box-shadow: 13px 13px 12px -12px rgba(0,0,0,0.41);
     box-shadow: 13px 13px 12px -12px rgba(0,0,0,0.41);
+
 }
 
 /*band*/
@@ -310,9 +321,11 @@ footer{
     width: 20%;
     margin: auto;
     padding: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
-.card-profile .img{
+.card-profile .img, .profile-info .img{
     width: 150px;
     height: 150px;
     background: white;
@@ -331,7 +344,94 @@ footer{
 }
 
 /*sections*/
-.main-h1{
+.main-h1, .title-post{
+    text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+
+/* post */
+.section-post{
+    width: 65%;
+    display: inline-block;
+    background: white;
+}
+
+.section-post p{
+    padding: 20px;
+    text-align: justify;
+}
+
+.post{
+    margin-top: 100px !important;
+    background: transparent!important;
+    -webkit-box-shadow:none!important;
+    -moz-box-shadow:none!important;
+    box-shadow:none!important;
+    border: none!important;
+}
+
+.title-post{
+    text-transform: uppercase;
+}
+.post-info{
+    padding: 10px 10px;
+}
+.post-info h1{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+/*aside*/
+
+aside.tools{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.widget{
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+.widget p, .widget h2{
+    font-family: 'Roboto', sans-serif;
+}
+.widget h2{
+    border-radius: 5px 5px 0 0;
+    background: #002B54;
+    font-family: 'Roboto',sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 14pt;
+    padding: 5px;
+    margin: 0;
+}
+
+/*profile*/
+
+.profile-info{
+    /*background: red;*/
+    padding: 20px;
+}
+
+.profile-info .img, .profile-info .text{
+    display: inline-block;
+    vertical-align: middle;
+}
+.profile-info .text{
+    margin-left: 20px;
+}
+
+.text li i{
+    margin-right: 5px;
+}
+
+.text li{
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    margin-bottom: 7px;
+
 }
