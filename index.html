@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Bi-level Optimization | Initiative</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Lora|Roboto" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Lora|Roboto|Poppins" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
     <script src="js/engine.js"></script>
 
 </head>
@@ -15,13 +18,16 @@
         <header class="main">
             <div class="menu-container">
                 <div class="logo">
+                    <a href="index.html">
                     <img src="img/logo-64.png" alt="logo">
+                    </a>
                 </div>
-                <nav class="menu">
+                <a href="#" class="btn-menu" onclick="displayMenu()"><i class="fa fa-bars"></i></a>
+                <nav class="menu" id="menu">
                     <ul>
                         <li class="current-menu-item"><a href="#" title="Home">Home</a></li>
                         <li><a href="post.html" title="Code">Code</a></li>
-                        <li><a href="post.html" title="Tutorials">Tutorials</a></li>
+                        <li><a href="profile.html" title="Tutorials">Tutorials</a></li>
                         <li><a href="post.html" title="Community">Community</a></li>
                     </ul>
                 </nav>
