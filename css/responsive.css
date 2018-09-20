@@ -1,0 +1,95 @@
+@media screen and ( min-width: 800px) and (max-width: 1000px ) {
+    div.cards{
+        width: 100%;
+    }
+
+    div.card, .card-profile{
+        width: 25%;
+        margin-bottom: 30px;
+    }
+
+    nav.menu{ display: block;}
+
+    a.btn-menu{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    div.card, .card-profile{
+        width: 40%;
+    }
+
+    nav.menu{ display: block;}
+    a.btn-menu{display: none;}
+
+    .card-post{
+        width: 80%;
+        display: block;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+    .section-post, aside.tools{
+        width: 80%;
+        display: block;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+    article{
+        padding-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    div.logo, nav.menu{
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    a.btn-menu{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    div.card, .card-profile{
+        width: 80%;
+    }
+
+    nav.menu{
+        width: 100%;
+        display: none;
+    }
+
+    nav.menu li{
+        text-align: center;
+        display: block;
+    }
+
+    a.btn-menu{
+        display: block;
+    }
+
+    .content-banner .text div{
+        width: 90%;
+    }
+
+    .content-banner{
+        height: 250px;
+    }
+
+    .card-post{
+        width: 90%;
+    }
+
+    .section-post, aside.tools{
+        width: 95%;
+    }
+
+}
