@@ -4,14 +4,16 @@
     text-decoration: none;
     color: black;/*#82BBD1;*/
     box-sizing: border-box;
-    font-family: 'Libre Baskerville', sans-serif;
     font-size: 12pt;
+    /*============================*/
+
 }
 
 body{
     color: #343434;
     font-family: sans-serif;
     background-color: #F8F8F8;
+    font-family: 'Roboto', sans-serif;
 }
 
 div.clear{
@@ -22,7 +24,7 @@ p, div{
 }
 
 h1, h2, h3, h4, h5{
-    font-family: 'Lora', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #343434;
     margin-top: 20px;
     margin-bottom: 5px;
@@ -53,7 +55,7 @@ a{
 }
 
 a:hover{
-    border-bottom: 1px dotted #00409E;
+    /*border-bottom: 1px dotted #00409E*/;
 }
 
 div.right{
@@ -136,9 +138,11 @@ nav.menu li{
 
 nav.menu a{
     display: block;
-    font-family: 'Libre Baskerville', sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding: 20px 15px;
     color: #000000;
+    border-bottom: 4px #F4F4F4 solid;
+
 }
 
 nav.menu a:hover,
@@ -153,10 +157,13 @@ a.news-item:hover{
     background: #E1E1E1;
 }
 
+.logo{
+    float: left;
+}
+
 .logo img{
     width: 50px;
     height: auto;
-    float: left;
     margin-left: 10px;
     margin-top: 5px;
 }
@@ -264,12 +271,14 @@ footer{
     -webkit-box-shadow: 8px 15px 38px -17px rgba(0,0,0,0.4);
     -moz-box-shadow: 8px 15px 38px -17px rgba(0,0,0,0.4);
     box-shadow: 8px 15px 38px -17px rgba(0,0,0,0.4);
+    background: white;
 }
 
 .card{
     width: 20%;
     margin-left:  23px;
     margin-right: 23px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -288,11 +297,12 @@ footer{
     margin-bottom: 40px;
 }
 .card-post .img{
-    width: auto;
-    height: 100px;
-    background: gray;
+    width: 45%;
+    height: auto;
+    /*background: gray;*/
     display: inline-block;
     vertical-align: top;
+    overflow: hidden;
 }
 
 .card-post .abstract{
@@ -323,6 +333,7 @@ footer{
     padding: 10px;
     margin-left: 25px;
     margin-right: 25px;
+    margin-bottom: 20px;
 }
 
 .card-profile .img, .profile-info .img{
@@ -348,6 +359,7 @@ footer{
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    font-family: 'Lora', sans-serif;
 }
 
 
@@ -359,10 +371,18 @@ footer{
 }
 
 .section-post p{
-    padding: 20px;
     text-align: justify;
+    font-family: 'Lora', sans-serif;
 }
 
+.section-post p,
+.section-post h1,
+.section-post h2,
+.section-post h3,
+.section-post h4,
+.section-post h5{
+    font-family: 'Libre Baskerville', sans-serif;
+}
 .post{
     margin-top: 100px !important;
     background: transparent!important;
@@ -373,7 +393,7 @@ footer{
 }
 
 .title-post{
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 .post-info{
     padding: 10px 10px;
@@ -384,11 +404,19 @@ footer{
     margin-bottom: 10px;
 }
 
+.section-content{
+    padding: 20px;
+}
+
+article{
+    padding-left: 10px;
+}
+
 /*aside*/
 
 aside.tools{
     display: inline-block;
-    width: 30%;
+    width: 32%;
     vertical-align: top;
 }
 
@@ -401,7 +429,7 @@ aside.tools{
 }
 .widget h2{
     border-radius: 5px 5px 0 0;
-    background: #002B54;
+    background: #05618F;
     font-family: 'Roboto',sans-serif;
     color: white;
     text-align: center;
@@ -413,8 +441,10 @@ aside.tools{
 /*profile*/
 
 .profile-info{
-    /*background: red;*/
+    background: #E7E7E7;
     padding: 20px;
+    max-width: 500px;
+    margin: auto;
 }
 
 .profile-info .img, .profile-info .text{
@@ -433,5 +463,20 @@ aside.tools{
     font-family: 'Roboto', sans-serif;
     list-style: none;
     margin-bottom: 7px;
+
+}
+
+a.btn-menu{
+    display: none;
+    float: right;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: #DADADA 1px solid;
+    padding-top: 10px;
+
+    margin-right: 7px;
+    margin-top: 7px;
+    border-radius: 5px;
 
 }
